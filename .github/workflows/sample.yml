@@ -13,5 +13,5 @@ jobs:
                    print(platform.processor())
                shell: python
              - name: Output Steps
-               run : echo "{{steps.python_command}}"
+               run : echo "${{steps.python_command}}"
 
