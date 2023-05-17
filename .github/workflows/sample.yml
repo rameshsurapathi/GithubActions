@@ -1,0 +1,14 @@
+name: FirstWorkflow
+on : [push]
+jobs:
+  run-shell-command:
+           runs-on: ubuntu-latest
+           steps:
+             - name: Echo a String
+               run: echo "Hello World"
+             - name: Python commands
+                run: |
+                    import platform
+                    print(platform.processor())
+                shell: python
+
