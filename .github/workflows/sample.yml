@@ -7,8 +7,8 @@ jobs:
              - name: Echo a String
                run: echo "Hello World"
              - name: Python commands
-                run: |
-                    import platform
-                    print(platform.processor())
-                shell: python
+               run: |
+                   import platform
+                   print(platform.processor())
+               shell: python
 
