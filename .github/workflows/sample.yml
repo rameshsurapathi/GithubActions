@@ -14,4 +14,15 @@ jobs:
                shell: python
              - name: Output Steps
                run : echo "${{steps.python_command}}"
+             - name: List Files
+               run: |
+                  pwd
+                  ls 
+             - name: Checkout
+               uses: actions/checkout@v1
+             - name: List Files after checkout
+               run: |
+                  pwd
+                  ls 
+              
 
