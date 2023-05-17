@@ -7,8 +7,11 @@ jobs:
              - name: Echo a String
                run: echo "Hello World"
              - name: Python commands
+               id: python_command
                run: |
                    import platform
                    print(platform.processor())
                shell: python
+             - name: Output Steps
+               run : echo "{{steps.python_command}}"
 
